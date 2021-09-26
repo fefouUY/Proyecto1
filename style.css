@@ -1,7 +1,7 @@
 * {
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -34,7 +34,7 @@ h3 {
 
 p {
     font-family: 'Roboto Slab', serif;
-    color: #484f4f;
+    color: black;
 }
 
 nav {
@@ -52,12 +52,6 @@ nav {
     font-display: center;
 }
 
-grid-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 a {
     float: center;
     color: white;
@@ -67,19 +61,12 @@ a {
     background-color: red;
 }
 
-a:hover {
-    text-decoration: none;
-    font-size: 25px;
-    color: white;
-    background-color: red;
-}
-
 .footer {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    height: auto;
+    height: 2.5rem;
     width: 100vw;
     background: red;
     padding-top: 40px;
@@ -93,15 +80,6 @@ a:hover {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-}
-
-.footer-content h4 {
-    font-size: 1.8rem;
-    font-weight: 400;
-    font-family: SNES;
-    color: white;
-    text-transform: capitalize;
-    line-height: 3rem;
 }
 
 .footer-content p {
@@ -128,19 +106,10 @@ a:hover {
     color: white;
 }
 
-.socials a i {
-    font-size: 1.1rem;
-    transition: color.4s ease;
-}
-
-.socials a :hover i {
-    color: aqua
-}
-
 .footer-bottom {
     background-color: red;
     width: 100vw;
-    padding: 20px 0;
+    padding: 5px;
     text-align: center;
 }
 
@@ -148,10 +117,4 @@ a:hover {
     font-size: 14 px;
     word-spacing: 2px;
     text-transform: capitalize;
-}
-
-.footer-bottom span {
-    text-transform: uppercase;
-    opacity: .4;
-    font-weight: 200;
 }
