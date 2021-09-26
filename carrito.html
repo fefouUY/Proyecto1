@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="text/css">
+    <link rel="stylesheet" href="https://famfonts.com/super-nintendo/">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,800;1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,800;1,500&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <header>
+        <h1>Snesretrouy</h1>
+        <nav>
+            <ul id="main-nav" class="navegacion"></ul>
+            <li><a href="Analisis">Analisis</a></li>
+            <li><a href="Momento Switch">Momento  Switch</a></li>
+            <li><a href="Historia">Historia</a></li>
+            <li><a href="Contacto">Contacto</a></li>
+            <li><a href="Carrito">Carrito</a></li>
+        </nav>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            
+            body {
+                width: 100vw;
+                display: flex;
+                flex-direction: column;
+                background: url(images/snesfondo2.jpg);
+                background-size: 100%;
+            }
+            
+            header {
+                height: 5rem;
+                color: white;
+                padding: 1rem;
+                font-size: larger;
+            }
+            
+            main {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-auto-rows: 1fr;
+                gap: 1rem;
+                padding: 1rem;
+            }
+            
+            h1 {
+                font-family: SNES;
+                font-size: 50px
+            }
+            
+            h2 {
+                font-family: 'Merriweather Sans', sans-serif;
+                font-size: 20px;
+                color: black;
+            }
+            
+            h3 {
+                font-family: 'Merriweather Sans', sans-serif;
+                font-size: 20px;
+                color: black;
+            }
+            
+            .producto {
+                display: flex;
+                flex-direction: column;
+                padding: 0.3rem;
+                gap: 0.5rem;
+            }
+            
+            .producto>img {
+                width: 100%;
+                align-self: center;
+            }
+        </style>
+        </head>
+
+        <body>
+            <header>
+                <h1>LISTA DE PRODUCTOS</h1>
+            </header>
+            <main></main>
+            <script>
+                const productos = [{
+                    nombre: "Super Mario World",
+                    precio: 1500,
+                    descrProducto: "La primera aventura de Mario y Luigi para Super NES los condujo a un mundo de nuevos personajes, habilidades y mucho más, convirtiéndolo en uno de los videojuegos de mayor éxito de todos los tiempos. ",
+                    link: "http://www.retroplace.com/pics/snes/packshots/48001--super-mario-world.png",
+                    disponible: true,
+                }, {
+                    nombre: "Donkey Kong Country",
+                    precio: 1800,
+                    descrProducto: "En 1994, en los albores de la era de los 32 bits, un juego de Super NES de 16 bits arrasó con sus gráficos tridimensionales prerrenderizados, su animación con calidad de dibujos animados y su música ambiental.",
+                    link: "https://wowroms-photos.com/emulators-roms-logo/48/27397/420-420/Donkey+Kong+Country+(USA)+(Rev+1)-image.jpg",
+                    disponible: true,
+                }, {
+                    nombre: "Megaman X",
+                    precio: 2000,
+                    descrProducto: "Mega Man X se desarrolla cien años después de que las aventuras del Mega Man original tuvieran lugar. El protagonista es X, un robot de una nueva generación que debe hacer frente a la amenaza de los reploides con la ayuda de Zero, un cazador de robots rebeldes.",
+                    link: "https://wowroms-photos.com/emulators-roms-logo/48/28408/420-420/Mega+Man+X+(USA)-image.jpg",
+                    disponible: true,
+                }, {
+                    nombre: "International Superstar Soccer Deluxe",
+                    precio: 3000,
+                    descrProducto: "La secuela para International Superstar Soccer, la saga de juegos de fútbol de Konami, esta versión 'Deluxe'cuenta con 45 selecciones nacionales.El mejor videojuego de fùtbol de nuestra consola",
+                    link: "http://www.retroplace.com/pics/snes/packshots/43899--international-superstar-soccer-deluxe.png",
+                    disponible: true,
+                }, {
+                    nombre: "Super Mario Kart",
+                    precio: 1500,
+                    descrProducto: "Es un videojuego de carreras en karts con los personajes de Mario y compañia.Divertite corriendo en sus pistas y compitiendo con tus amigos",
+                    link: "https://wowroms-photos.com/emulators-roms-logo/48/29586/420-420/Super+Mario+Kart+(USA)-image.jpg",
+                    disponible: true,
+                }, {
+                    nombre: "Killer Instinct",
+                    precio: 1500,
+                    descrProducto: "Videojuego de Luchas realizado por la empresa Rare. Con sus gráficos en 2D lucharás para conseguir la victoria en pelea tras pelea ",
+                    link: "https://wowroms-photos.com/emulators-roms-logo/48/28145/420-420/Killer+Instinct+(USA)-image.jpg",
+                    disponible: true,
+                }, {
+                    nombre: "Super Metroid",
+                    precio: 3500,
+                    descrProducto: "Super Metroid es un juego de plataformas en 2D con elementos de acción y aventura. La progresión del juego gira alrededor de la recolección secuencial de objetos que permiten que Samus (la protagonista del juego) supere obstáculos para tener acceso a nuevas partes de los escenarios.",
+                    link: "https://wowroms-photos.com/emulators-roms-logo/48/29599/420-420/Super+Metroid+(Japan,+USA)+(En,Ja)-image.jpg",
+                    disponible: true,
+                }, {
+                    nombre: "Super Mario World 2: Yoshi's Island",
+                    precio: 2000,
+                    descrProducto: "Sumergete en la aventura de Yoshi para salvar a Mario siendo bebé. Plataformero en 2D con un diseño artistico excepcional",
+                    link: "https://static.wikia.nocookie.net/mario/images/d/d4/350px-SMW2-1-.jpg/revision/latest?cb=20091120173012&path-prefix=es",
+                    disponible: true,
+                }, {
+                    nombre: "NBA Jam",
+                    precio: 1500,
+                    descrProducto: "Uno de los mejores videojuegos de Basketbol de nuestra querida Super Nintendo. Modo de juego 2 contra 2.",
+                    link: "https://wowroms-photos.com/emulators-roms-logo/48/28533/420-420/NBA+Jam+(USA)+(Rev+1)-image.jpg",
+                    disponible: true,
+                }, ];
+
+                const main = document.getElementsByTagName("main")[0];
+
+                const crearYAgregarProducto = (producto) => {
+                    const contenedorProducto = document.createElement("div");
+                    const nombreProducto = document.createElement("h2");
+                    const descrProducto = document.createElement("h3");
+                    const imagenProducto = document.createElement("img");
+                    const precioProducto = document.createElement("p");
+
+
+                    contenedorProducto.appendChild(nombreProducto);
+                    contenedorProducto.appendChild(imagenProducto);
+                    contenedorProducto.appendChild(descrProducto);
+                    contenedorProducto.appendChild(precioProducto);
+
+                    contenedorProducto.classList.add("producto");
+                    nombreProducto.textContent = producto.nombre;
+
+                    imagenProducto.setAttribute("src", producto.link);
+                    imagenProducto.setAttribute("alt", producto.nombre);
+
+                    descrProducto.textContent = producto.descrProducto;
+                    precioProducto.textContent = `Precio: $${producto.precio}`;
+
+                    main.appendChild(contenedorProducto);
+                }
+
+
+                const filtradoGeneral = (productos) => {
+                    const disponibles = productos.filter((item) => item.disponible)
+
+                    const ordenados = disponibles.sort((a, b) => b.precio - a.precio)
+
+                    return ordenados
+                }
+
+                const filtradoGlobal = filtradoGeneral(productos)
+
+                for (let i = 0; i < filtradoGlobal.length; i++) {
+                    crearYAgregarProducto(filtradoGlobal[i]);
+                }
+            </script>
+        </body>
+
+</html>
