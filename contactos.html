@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="text/css">
+    <script src="/contactos.js"></script>
+    <link href="https://blogfonts.com/css/aWQ9NTE2NzMmc3ViPTY3MyZjPXMmdHRmPVNORVMrSXRhbGljLnR0ZiZuPXNuZXM/SNES.ttf" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://famfonts.com/super-nintendo/">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,800;1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,800;1,500&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <header>
+        <a href="file:///C:/Users/Federico/Desktop/Proyecto1/index.html">
+            <h1>Snesretrouy</h1>
+        </a>
+        <nav>
+            <ul id="main-nav" class="navegacion"></ul>
+            <li><a href="Analisis">Analisis</a></li>
+            <li><a href="Momento Switch">Momento  Switch</a></li>
+            <li><a href="Historia.html">Historia</a></li>
+            <li><a href="contactos.html">Contacto</a></li>
+            <li><a href="carrito.html">Carrito</a></li>
+        </nav>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            
+            body {
+                width: 100vw;
+                display: flex;
+                flex-direction: column;
+                background: url(images/snesfondo2.jpg);
+                background-size: 100%;
+            }
+            
+            header {
+                height: 5rem;
+                font-family: 'snes', sans-serif;
+                color: red;
+                padding: 1rem;
+                font-size: larger
+            }
+            
+            main {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-auto-rows: 1fr;
+                gap: 1rem;
+                padding: 1rem;
+            }
+            
+            h1 {
+                font-family: SNES;
+                font-size: 50px
+            }
+            
+            h2 {
+                font-family: 'Merriweather Sans', sans-serif;
+                font-size: 20px;
+                color: black;
+            }
+            
+            h3 {
+                font-family: 'Merriweather Sans', sans-serif;
+                font-size: 20px;
+                color: black;
+            }
+            
+            #text {
+                font-family: SNES;
+            }
+        </style>
+
+        <body>
+            <header>
+                <h1>Contacto</h1>
+                <form onsubmit="return false"></form>
+                <input type="text" placeholder="Ingresa tu nombre" id="Nombre" />
+                <input type="text" placeholder="Ingresa tu apellido" id="Apellido" />
+                <br><br>
+                <input type="radio" id="male" name="gender" value="hombre"> Hombre
+                <input type="radio" id="female" name="gender" value="mujer"> Mujer
+                <br><br>
+                <input type="email" placeholder="Ingresa tu email" id="email" />
+                <select id="country">
+                <option disabled selected value> -- select a country -- </option>
+                <option value="Uruguay">Uruguay</option>
+                <option value="Brasil">Brasil</option>
+                <option value="Otros">Otros</option>
+                </select>
+                <br><br>
+                <input type="password" placeholder="Ingrese Contraseña" id="contraseña" />
+                <input type="password" placeholder="ingrese Conntraseña (check)" id="contraseñaChequeada" />
+                <br><br>
+                <input type="checkbox" id="newsletter" />Enviarme noticias mensualmente
+                <br><br>
+                <span>Cual es tu consulta?</span>
+                <br>
+                <textarea id="question" rows="5"></textarea>
+                <br><br>
+                <button onclick="sendContact();">Enviar</button>
+            </header>
+        </body>
+
+</html>
