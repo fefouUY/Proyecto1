@@ -7,6 +7,7 @@ Snesretrouy is my content project about Super Nintendo in Spanish and Portuguese
 
 ## Table of contents
 * [General info](#general-info)
+* 
 * [Technologies](#technologies)
 * [Setup](#setup)
 
